@@ -29,7 +29,7 @@ spec:
     metadata:
       labels:
         project: roboshop
-        tier: db
+        tier: backend
         component: catalogue
     spec:
       containers:
