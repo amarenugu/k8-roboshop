@@ -11,4 +11,4 @@ metadata:
 spec:
   containers:
   - name: debug
-    image: amarenugu/debug:4.4.0
+    image: amarenugu/debug:4.0.0
