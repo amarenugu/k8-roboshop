@@ -84,9 +84,9 @@ spec:
   # replicaset uses these labels to match pods
   selector:
     matchLabels:
-    project: roboshop
-    tier: frontend
-    component: frontend
+      project: roboshop
+      tier: frontend
+      component: frontend
   #pod definition
   template:
     metadata:
