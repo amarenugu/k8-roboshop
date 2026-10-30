@@ -35,9 +35,12 @@ spec:
       containers:
         - name: mysql
           image: joindevops/mysql:4.0.0
-          envFrom:
-          - secretRef:
-              name: mysql
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: root-password
 ---
 apiVersion: v1
 kind: Service
