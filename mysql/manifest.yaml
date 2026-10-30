@@ -37,8 +37,8 @@ spec:
           image: joindevops/mysql:4.0.0
           args: ["--mysql-native-password=ON"]
           env:
-          - name: MY_SQL_ROOT_PASSWORD
-            value: "RoboShop@1"
+            - name: MY_SQL_ROOT_PASSWORD
+              value: "RoboShop@1"
 
 ---
 apiVersion: v1
