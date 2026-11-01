@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: rabbitmq
+  namespace: roboshop
 type: Opaque
 data:
   RABBITMQ_DEFAULT_USER: cm9ib3Nob3AK
@@ -36,7 +37,9 @@ spec:
       containers:
         - name: rabbitmq
           image: rabbitmq:3
-          envFrom: rabbitmq
+          envFrom:
+          - secretRef:
+              name: rabbitmq
 ---
 apiVersion: v1
 kind: Service
