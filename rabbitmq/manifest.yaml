@@ -7,7 +7,7 @@ type: Opaque
 data:
   RABBITMQ_DEFAULT_USER: cm9ib3Nob3AK
   RABBITMQ_DEFAULT_PASS: cm9ib3Nob3AxMjMK
-
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
